@@ -4,12 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Nabvar from './Nav'
 import Hero from './hero'
-
+import Header from './Header'
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
+    <Header/>
     <Nabvar/>
     <Hero/>
     </>
