@@ -1,36 +1,58 @@
+/* Navbar.css */
+
 .nav-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-}
-
-.nav-container ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
-}
-
-.nav-container li {
-  margin: 0 10px;
-}
-
-.nav-container li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.nav-link {
-  /* Estilos base para los enlaces */
-  color: #333;
-  text-decoration: none;
-}
-
-.nav-link.active {
-  /* Estilos para el efecto hover */
-  color: blue;
-}
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Gradiente moderno */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    /* border-radius: 12px; Bordes ligeramente redondeados */
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Efecto sutil en hover */
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15); /* Fondo claro en hover */
+    transform: translateY(-3px); /* Elevación al hacer hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
+  }
+  
+  .nav-link:hover::before {
+    opacity: 1; /* Muestra el efecto sutil en hover */
+  }
+  
