@@ -59,9 +59,11 @@ body{
 
 /** Hero **/
 .hero{
-position:absolute;
+  position:relative;
 }
 
-.hero__img{
-  width: max(60rem, 100%);
+.hero__content{
+  position: absolute;
+  background-color: rgba(0,0,0,.3);
+  background-color: rgb(0,0,0 /.3);
 }

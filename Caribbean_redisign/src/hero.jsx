@@ -1,12 +1,11 @@
 import React from "react";
-
+import deadpool from "./assets/deadpool.jpeg";
 const Hero = ()=>{
-    const hero = "https://images2.alphacoders.com/136/1363754.jpeg";
+    const hero = deadpool;
     return(
         <section className="hero">
-            <img className="hero__img" src={hero} alt="" />
-            <div className="hero__content">
-                <h1 className="hero__content--titulo">Deadpool & Wolverine</h1>
+            <div className="hero__content" style={{backgroundImage: `url(${deadpool})`}}>
+            <p>hola</p>
             </div>
         </section>
     )
