@@ -2,50 +2,59 @@ import React, { useState } from "react";
 import './NavBar.css';
 
 const Nabvar = () => {
-  const [hoverStates, setHoverStates] = useState(
-    [
-      { id: 'inicio', isHovering: false },
-      { id: 'estrenos', isHovering: false },
-      { id: 'proximamente', isHovering: false },
-      { id: 'cartelera', isHovering: false },
-      { id: 'fineArts', isHovering: false },
-      { id: 'cumpleaños', isHovering: false },
-      { id: 'salasVIP', isHovering: false },
-      { id: 'cinemaEvents', isHovering: false },
-      { id: 'formatos', isHovering: false },
-    ]
-  );
-  const handleMouseEnter = (id) => {
-    setHoverStates(prevStates =>
-      prevStates.map(state =>
-        state.id === id ? { ...state, isHovering: true } : state
-      )
-    );
-  };
 
-  const handleMouseLeave = (id) => {
-    setHoverStates(prevStates =>
-      prevStates.map(state =>
-        state.id === id ? { ...state, isHovering: false } : state
-      )
-    );
-  };
     return (
         <div className="nav-container">
-      <ul className="nav-list">
-          {hoverStates.map(state => (
-            <li key={state.id}>
-              <a href="/"
-                 onMouseEnter={() => handleMouseEnter(state.id)}
-                 onMouseLeave={() => handleMouseLeave(state.id)}
-                 className={state.isHovering ? 'nav-link active' : 'nav-link'}>
-                {state.id}
-              </a>
-            </li>
-          ))}
-        </ul>
-    </div>
-    )
+            <ul className="nav-list">
+                <li>
+                    <a href="/" className="nav-link" id="inicio">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/" className="nav-link" id="estrenos">
+                        estrenos
+                    </a>
+                </li>
+                <li>
+                    <a href="/" className="nav-link" id="proximamente">
+                        Proximamente
+                    </a>
+                </li>
+                <li>
+                    <a href="/" className="nav-link" id="cartelera">
+                        Cartelera
+                    </a>
+                </li>
+                <li>
+                    <a href="/" className="nav-link" id="finearts">
+                        FineArts
+                    </a>
+                </li>
+                <li>
+                    <a href="/" className="nav-link" id="cumpleanos">
+                        Cumpleaños
+                    </a>
+                </li>
+                <li>
+                    <a href="/" className="nav-link" id="salasvip">
+                        SalasVIP
+                    </a>
+                </li>
+                <li>
+                    <a href="/" className="nav-link" id="cinemaevents">
+                        CinemaEvents
+                    </a>
+                </li>
+                <li>
+                    <a href="/" className="nav-link" id="formatos">
+                        Formatos
+                    </a>
+                </li>
+                {/* Agrega más elementos <li> según tus necesidades */}
+            </ul>
+        </div>
+    );
 };
 
 export default Nabvar;
