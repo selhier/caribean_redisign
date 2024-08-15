@@ -8,7 +8,7 @@ const Nabvar = () => {
             <ul className="nav-list">
                 <li>
                     <a href="/" className="nav-link" id="inicio">
-                        Inicio
+                        Inicio 
                     </a>
                 </li>
                 <li>
