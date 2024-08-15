@@ -1,30 +1,36 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-image: url('https://fastly.picsum.photos/id/149/3454/2288.jpg?hmac=JoHMBHymDuk59QWHK89nquWAXE4Su1mF07OKdvmpN3g');
-    background-position: center;
-    background-size: cover;
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
 }
-.logo-container {
-    padding-top: 3px;
-    cursor: pointer;
-  }
-  
-  .nav-container {
-    display: flex;
-  }
-  
-  .nav-container li {
-    margin: 0 10px;
-    list-style: none;
-  }
-  
-  .nav-container li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-  }
-  
+
+.nav-container ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.nav-container li {
+  margin: 0 10px;
+}
+
+.nav-container li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-link {
+  /* Estilos base para los enlaces */
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  /* Estilos para el efecto hover */
+  color: blue;
+}
