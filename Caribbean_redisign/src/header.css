@@ -1,0 +1,18 @@
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+ 
+   
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    height: 50px;
+  }
+  
