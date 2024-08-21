@@ -22,7 +22,7 @@ const Nabvar = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="/" className="nav-link" id="cartelera">
+                    <a href="./" className="nav-link" id="cartelera">
                         Cartelera
                     </a>
                 </li>
