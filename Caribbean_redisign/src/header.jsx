@@ -3,17 +3,14 @@ import './Header.css';
 import cblogo from './assets/cblogo.jpg';
 
 const Header = () => {
-    const logo = cblogo;
-    return (
-        
-            <header className="header">
-                <div className="logo-cotainer">
-                    <img src={logo} alt="Logo" />
-                </div>
-                
-      
-        </header>
-        
-    )
+  const logo = cblogo;
+  return (
+    <header className="header">
+      <div className="banner-container bg-cover bg-center h-64">
+        <img className="w-full h-full object-bottom" src={logo} alt="Logo" />
+      </div>
+    </header>
+  );
 };
+
 export default Header;

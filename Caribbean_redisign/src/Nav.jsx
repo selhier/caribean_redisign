@@ -43,7 +43,7 @@ const Nabvar = () => {
                 </li>
                 <li>
                     <a href="/" className="nav-link" id="cinemaevents">
-                        CinemaEvents
+                        Cinema Events
                     </a>
                 </li>
                 <li>
